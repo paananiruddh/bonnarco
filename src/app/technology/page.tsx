@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/Button";
 
@@ -68,9 +69,9 @@ export default function TechnologyPage() {
         <p className="prose-body mt-4 max-w-2xl text-sm text-stone">
           Note: Arcus Communication System is Bonnar &amp; Co&rsquo;s own
           technology, distinct from Arcus, one of our{" "}
-          <a href="/brands" className="focus-ring font-medium text-brass-dark underline underline-offset-4">
+          <Link href="/brands" className="focus-ring font-medium text-brass-dark underline underline-offset-4">
             operating brands
-          </a>
+          </Link>
           .
         </p>
       </Section>

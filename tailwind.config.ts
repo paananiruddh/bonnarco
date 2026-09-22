@@ -42,9 +42,6 @@ const config: Config = {
         wide2: "0.08em",
         wide3: "0.16em",
       },
-      backgroundImage: {
-        grain: "url('/brand/texture-grain.svg')",
-      },
     },
   },
   plugins: [],

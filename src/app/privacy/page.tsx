@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Section } from "@/components/Section";
 import { LegalContent } from "@/components/LegalContent";
 import { site } from "@/lib/site-config";
@@ -74,12 +75,12 @@ export default function PrivacyPage() {
           You can ask what personal information we hold about you, ask us
           to correct it, or ask us to delete it, by getting in touch via
           our{" "}
-          <a
+          <Link
             href="/contact"
             className="font-medium text-brass-dark underline underline-offset-4"
           >
             contact form
-          </a>
+          </Link>
           . We'll respond to reasonable requests as promptly as we can.
         </p>
         <p>

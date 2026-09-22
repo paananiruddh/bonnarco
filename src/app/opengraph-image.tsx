@@ -4,6 +4,7 @@ import path from "node:path";
 import { site } from "@/lib/site-config";
 
 export const runtime = "nodejs";
+export const dynamic = "force-static";
 export const alt = `${site.brandName} — Business Support & Advice`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

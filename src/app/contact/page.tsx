@@ -27,7 +27,20 @@ export default function ContactPage() {
             enough to get started — we&rsquo;ll take it from there.
           </p>
         </div>
-        <EnquiryForm />
+        {process.env.STATIC_EXPORT === "true" ? (
+          <div className="rounded-2xl border border-ink/10 bg-sand/60 p-8">
+            <p className="font-display text-xl font-medium text-ink">
+              You&rsquo;re viewing a static preview.
+            </p>
+            <p className="mt-2 text-stone">
+              Enquiries need a live server to send, and this mirror
+              isn&rsquo;t connected to one. The working form runs on the
+              primary deployment of this site.
+            </p>
+          </div>
+        ) : (
+          <EnquiryForm />
+        )}
       </div>
     </Section>
   );

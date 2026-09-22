@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
 const ENQUIRY_AREAS = [
@@ -152,9 +153,9 @@ export function EnquiryForm() {
       <p className="text-xs text-stone">
         By submitting, you agree to be contacted about your enquiry. See
         our{" "}
-        <a href="/privacy" className="underline underline-offset-4 hover:text-ink">
+        <Link href="/privacy" className="underline underline-offset-4 hover:text-ink">
           Privacy Policy
-        </a>
+        </Link>
         .
       </p>
     </form>

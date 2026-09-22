@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Section, SectionHeading } from "@/components/Section";
 import { Button } from "@/components/Button";
 import { FeatureCard } from "@/components/FeatureCard";
@@ -161,9 +162,9 @@ export default function HomePage() {
             independent contractors and small business operators who are
             managing the practical demands of running things, and the
             personal pressures that can come with it.{" "}
-            <a href="/about" className="focus-ring font-medium text-brass-dark underline underline-offset-4">
+            <Link href="/about" className="focus-ring font-medium text-brass-dark underline underline-offset-4">
               Read more about how we work
-            </a>
+            </Link>
             .
           </p>
         </div>
