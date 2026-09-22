@@ -28,6 +28,11 @@ launch.
 - [ ] **Hosting.** The site needs a Node.js-capable host (Vercel, or
   similar) because of the `/api/enquiry` route — it cannot be deployed as
   a static export.
+  - A static mirror **is** deployed to GitHub Pages (`gh-pages` branch,
+    built via `npm run build:pages`) for quick visual review only. The
+    enquiry form shows a "static preview" notice there instead of the
+    live form — see `src/app/contact/page.tsx`. Don't treat that
+    deployment as production; it exists to look at, not to launch from.
 
 ## Should confirm soon
 
