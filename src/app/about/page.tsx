@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionHeading } from "@/components/Section";
 import { FeatureCard } from "@/components/FeatureCard";
+import { UmbrellaFan } from "@/components/art/UmbrellaFan";
+import { NodeNetwork } from "@/components/art/NodeNetwork";
 
 export const metadata: Metadata = {
   title: "About",
@@ -35,7 +37,11 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      <Section tone="paper" className="pb-12 sm:pb-16">
+      <Section tone="paper" className="relative overflow-hidden pb-12 sm:pb-16">
+        <UmbrellaFan
+          tone="paper"
+          className="absolute -top-4 right-6 hidden h-80 w-[36rem] lg:block"
+        />
         <p className="eyebrow">About Bonnar &amp; Co</p>
         <h1 className="mt-5 max-w-3xl font-display text-4xl font-medium leading-[1.1] text-ink sm:text-5xl">
           An umbrella for the practical and the personal.
@@ -84,8 +90,12 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section tone="ink">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+      <Section tone="ink" className="relative overflow-hidden">
+        <NodeNetwork
+          tone="ink"
+          className="absolute -bottom-20 left-2 hidden h-64 w-64 opacity-80 lg:block"
+        />
+        <div className="relative grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
           <div>
             <p className="eyebrow text-brass-light">Under the umbrella</p>
             <h2 className="mt-3 font-display text-3xl font-medium text-paper sm:text-4xl">

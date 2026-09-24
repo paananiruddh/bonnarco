@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/Button";
+import { ArcRings } from "@/components/art/ArcRings";
 
 export const metadata: Metadata = {
   title: "Technology",
@@ -55,7 +56,8 @@ const products = [
 export default function TechnologyPage() {
   return (
     <>
-      <Section tone="paper" className="pb-12 sm:pb-16">
+      <Section tone="paper" className="relative overflow-hidden pb-12 sm:pb-16">
+        <ArcRings tone="paper" className="absolute -right-10 -top-24 hidden h-96 w-96 lg:block" />
         <p className="eyebrow">Technology</p>
         <h1 className="mt-5 max-w-3xl font-display text-4xl font-medium leading-[1.1] text-ink sm:text-5xl">
           Purpose-built systems for independent operators.

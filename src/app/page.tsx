@@ -3,6 +3,8 @@ import { Section, SectionHeading } from "@/components/Section";
 import { Button } from "@/components/Button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { EntityCard } from "@/components/EntityCard";
+import { ArcRings } from "@/components/art/ArcRings";
+import { NodeNetwork } from "@/components/art/NodeNetwork";
 import { technologyProducts, operatingBrands } from "@/lib/site-config";
 
 const pillars = [
@@ -42,15 +44,10 @@ export default function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-paper">
-        <svg
-          className="pointer-events-none absolute -right-24 -top-24 h-[32rem] w-[32rem] text-stone-light/40 sm:-right-16 sm:-top-32"
-          viewBox="0 0 400 400"
-          fill="none"
-          aria-hidden="true"
-        >
-          <circle cx="200" cy="200" r="199" stroke="currentColor" />
-          <circle cx="200" cy="200" r="150" stroke="currentColor" />
-        </svg>
+        <ArcRings
+          tone="paper"
+          className="absolute -right-16 -top-32 hidden h-[32rem] w-[32rem] lg:block"
+        />
 
         <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-16 sm:pt-24 lg:px-10 lg:pb-28 lg:pt-32">
           <p className="eyebrow">
@@ -97,7 +94,11 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section tone="ink">
+      <Section tone="ink" className="relative overflow-hidden">
+        <NodeNetwork
+          tone="ink"
+          className="absolute -bottom-10 -right-10 hidden h-80 w-80 opacity-90 lg:block"
+        />
         <SectionHeading
           eyebrow="Technology"
           title="Purpose-built systems, not spreadsheets and sticky notes."
