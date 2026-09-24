@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://www.bonnarco.com.au/sitemap.xml
+Sitemap: https://bonnarandco.com.au/sitemap.xml
