@@ -16,9 +16,8 @@ export const site = {
   description:
     "Bonnar & Co helps sole traders, independent contractors and small business operators manage the practical demands of running a business — backed by purpose-built technology and a discreet, human approach.",
 
-  // Confirmed once the production domain is set. Used for canonical URLs,
-  // sitemap and structured data. See CONFIG-CHECKLIST.md.
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bonnarco.com.au",
+  // Used for canonical URLs, sitemap and structured data.
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bonnarandco.com.au",
 
   // Not yet confirmed — keep null until supplied. Footer/Contact render
   // conditionally around these.

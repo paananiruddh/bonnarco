@@ -7,9 +7,11 @@ const nextConfig = {
   // /api/enquiry. Set STATIC_EXPORT=true to build that variant (see
   // "npm run build:pages"). The default build (used on Vercel or any
   // Node host) keeps the real API route working.
+  //
+  // No basePath: the site is served from bonnarandco.com.au's root via
+  // the CNAME file on the gh-pages branch, not from a github.io subpath.
   ...(isStaticExport && {
     output: "export",
-    basePath: "/bonnarco",
     images: { unoptimized: true },
   }),
 };

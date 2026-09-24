@@ -20,19 +20,25 @@ launch.
   - Swap the provider in `src/lib/send-enquiry-notification.ts` for
     whatever Bonnar & Co already uses (SMTP, another ESP, or eventually a
     direct integration with the Arcus Communication System itself).
-- [ ] **Production domain.** `site.url` in `src/lib/site-config.ts`
-  currently falls back to `https://www.bonnarco.com.au` as a placeholder
-  (used for the sitemap and social preview metadata) — **this has not
-  been confirmed as the real domain.** Set `NEXT_PUBLIC_SITE_URL` once a
-  domain is registered and confirmed.
-- [ ] **Hosting.** The site needs a Node.js-capable host (Vercel, or
-  similar) because of the `/api/enquiry` route — it cannot be deployed as
-  a static export.
-  - A static mirror **is** deployed to GitHub Pages (`gh-pages` branch,
-    built via `npm run build:pages`) for quick visual review only. The
-    enquiry form shows a "static preview" notice there instead of the
-    live form — see `src/app/contact/page.tsx`. Don't treat that
-    deployment as production; it exists to look at, not to launch from.
+- [x] **Production domain confirmed:** `bonnarandco.com.au` (owned in
+  GoDaddy). Set as the default in `src/lib/site-config.ts`. DNS points it
+  at GitHub Pages (A records on `@`, CNAME on `www` →
+  `paananiruddh.github.io`) and the `gh-pages` branch carries the `CNAME`
+  file GitHub Pages needs to serve it. Confirm in Settings → Pages that
+  the custom domain shows as verified and turn on "Enforce HTTPS" once
+  the certificate provisions (can take a little while after DNS
+  propagates).
+- [ ] **Hosting for the real (non-static) site.** GitHub Pages only
+  serves static files — no Node server, so no `/api/enquiry`, which means
+  the enquiry form can't actually send anywhere from
+  `bonnarandco.com.au` as currently deployed. That domain is pointed at
+  a **static mirror** (`gh-pages` branch, built via `npm run
+  build:pages`) for visual review — the contact page shows a "static
+  preview" notice instead of the live form there (see
+  `src/app/contact/page.tsx`). Before this domain is the real production
+  site, move hosting to a Node-capable host (Vercel is the natural fit —
+  zero code changes needed, the default `npm run build` already targets
+  it) and point the domain's DNS there instead.
 
 ## Should confirm soon
 

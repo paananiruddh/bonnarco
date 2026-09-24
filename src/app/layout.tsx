@@ -5,8 +5,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const basePath = process.env.STATIC_EXPORT === "true" ? "/bonnarco" : "";
-
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -28,7 +26,7 @@ export const metadata: Metadata = {
     description: site.description,
   },
   icons: {
-    icon: `${basePath}/brand/logo/favicon.svg`,
+    icon: "/brand/logo/favicon.svg",
   },
 };
 
