@@ -133,9 +133,9 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Our brands"
           title="Operating brands within Bonnar & Co."
-          dek="Some of what we do lives under its own name. Arcus and LuxCty are operating brands within Bonnar & Co, each built for the people they serve."
+          dek="Some of what we do lives under its own name. Arcus is an operating brand within Bonnar & Co, built for the people it serves."
         />
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:max-w-xl">
           {operatingBrands.map((brand) => (
             <EntityCard
               key={brand.name}

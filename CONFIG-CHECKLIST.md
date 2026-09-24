@@ -82,13 +82,16 @@ picks them up automatically.
   embedded, so they're safe to hand to a printer or another designer as
   they are. If a platform specifically requires PNG/ICO, rasterise from
   these SVGs at the size needed rather than recreating the mark.
-- [ ] The descriptions of Arcus and LuxCty on `/brands` and the technology
-  overlap noted on `/technology` were paraphrased from arcussvcs.com and
-  luxcty.com as they existed on 22 September 2026. Re-check them against
-  the live sites before launch in case either has changed.
-- [ ] No additional operating brands or ventures were added beyond Arcus
-  and LuxCty, and no subsidiary/registration/ownership structure was
-  implied for either — confirm before adding anything new.
+- [ ] The description of Arcus on `/brands` and the technology overlap
+  noted on `/technology` was paraphrased from arcussvcs.com as it existed
+  on 22 September 2026. Re-check it against the live site before launch
+  in case it has changed.
+- [ ] No additional operating brands or ventures were added beyond Arcus,
+  and no subsidiary/registration/ownership structure was implied for it
+  — confirm before adding anything new. (A second, previously-listed
+  operating brand was removed at the client's request on 24 September
+  2026 — every reference to it was taken out of the site and this
+  checklist.)
 - [ ] No automated test suite (unit or end-to-end) was written — the
   build was verified manually (typecheck, production build, and a live
   browser pass across breakpoints). Worth adding if the site keeps
@@ -99,7 +102,7 @@ picks them up automatically.
 | What | Where |
 |---|---|
 | Contact details, socials, site URL | `src/lib/site-config.ts` |
-| Operating brand copy (Arcus, LuxCty) | `src/lib/site-config.ts` + `src/app/brands/page.tsx` |
+| Operating brand copy (Arcus) | `src/lib/site-config.ts` + `src/app/brands/page.tsx` |
 | Technology product copy | `src/lib/site-config.ts` + `src/app/technology/page.tsx` |
 | Enquiry email delivery | `src/lib/send-enquiry-notification.ts` + `.env.local` |
 | Brand system reference | `docs/BRAND-GUIDELINES.md` |

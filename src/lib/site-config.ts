@@ -57,13 +57,6 @@ export const operatingBrands: OperatingBrand[] = [
     description:
       "Arcus brings job scheduling, contractor coordination and client communication into a single workspace, so distributed teams can respond quickly and keep a clear view of operations.",
   },
-  {
-    name: "LuxCty",
-    url: "https://luxcty.com",
-    summary: "Professional management and support for independent operators.",
-    description:
-      "LuxCty provides professional management and support for independent operators, including safety check-ins, day-to-day coordination and confidential long-term planning — built around protecting independence.",
-  },
 ];
 
 export type TechnologyProduct = {

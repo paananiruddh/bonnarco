@@ -10,7 +10,7 @@ const ENQUIRY_AREAS = [
   "Client enquiry & communication",
   "Advertising & marketing coordination",
   "Lifestyle & wellbeing support",
-  "Our brands (Arcus / LuxCty)",
+  "Our brands (Arcus)",
   "Something else",
 ];
 

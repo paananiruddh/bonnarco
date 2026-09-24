@@ -57,9 +57,9 @@ export default function TermsPage() {
         <h2>Third-party links</h2>
         <p>
           This site links to third-party sites, including our operating
-          brands Arcus (arcussvcs.com) and LuxCty (luxcty.com). Those
-          sites are operated independently and governed by their own
-          terms. We aren't responsible for their content.
+          brand Arcus (arcussvcs.com). Those sites are operated
+          independently and governed by their own terms. We aren't
+          responsible for their content.
         </p>
 
         <h2>Enquiries and no guarantee of outcome</h2>

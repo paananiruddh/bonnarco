@@ -4,7 +4,7 @@ import { Section } from "@/components/Section";
 export const metadata: Metadata = {
   title: "Our Brands",
   description:
-    "Arcus and LuxCty are operating brands within Bonnar & Co, each built for the clients and industries they serve directly.",
+    "Arcus is an operating brand within Bonnar & Co, built for the clients and industries it serves directly.",
 };
 
 const brands = [
@@ -22,20 +22,6 @@ const brands = [
       "Fast, consistent client communication, including dedicated numbers",
     ],
   },
-  {
-    name: "LuxCty",
-    url: "https://luxcty.com",
-    summary: "Professional management and support for independent operators.",
-    paragraphs: [
-      "LuxCty is a professional management brand for independent operators — support built around safety, day-to-day coordination and confidential long-term planning, all designed to protect independence rather than replace it.",
-      "Its safety operations and check-in protocols share a foundation with Bonnar & Co's own LuxSafe technology; its client communication and scheduling needs draw on the same thinking behind the Arcus Communication System.",
-    ],
-    points: [
-      "Safety operations, including structured check-ins and discreet escalation pathways",
-      "Day-to-day coordination — client communication, bookings and scheduling",
-      "Confidential guidance on long-term and financial planning",
-    ],
-  },
 ];
 
 export default function BrandsPage() {
@@ -47,8 +33,8 @@ export default function BrandsPage() {
           Operating brands within Bonnar &amp; Co.
         </h1>
         <p className="prose-body mt-6 max-w-2xl text-lg">
-          Arcus and LuxCty operate under their own names, for the clients
-          and industries they serve directly. Both draw on the systems and
+          Arcus operates under its own name, for the clients and
+          industries it serves directly, drawing on the systems and
           support structure of Bonnar &amp; Co behind the scenes.
         </p>
       </Section>

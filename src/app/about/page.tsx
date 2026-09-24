@@ -121,7 +121,7 @@ export default function AboutPage() {
                 Our brands
               </span>
               <p className="mt-2 text-sm text-paper/65">
-                Arcus and LuxCty — operating brands within Bonnar &amp; Co.
+                Arcus — an operating brand within Bonnar &amp; Co.
               </p>
               <span className="mt-4 inline-block text-sm font-medium text-brass-light">
                 Meet our brands ↗
